@@ -374,7 +374,8 @@ function renderAllShapes() {
     leftHand.matrix = armCoordsMat;
     leftHand.matrix.translate(0.1, 0.6, 0.101);
     leftHand.matrix.scale(0.25, 0.25, 0.25);
-    leftHand.matrix.rotate(g_handAngle+45, 0, 0, 1);
+    leftHand.matrix.rotate(45, 0, 0, 1);
+    leftHand.matrix.rotate(g_handAngle, 0, 0, 1);
     leftHand.render();
 
     // draw a right arm
@@ -395,7 +396,8 @@ function renderAllShapes() {
     rightHand.matrix = rightArmCoordsMat;
     rightHand.matrix.translate(0.1, 0.6, 0.101);
     rightHand.matrix.scale(0.25, 0.25, 0.25);
-    rightHand.matrix.rotate(g_handAngle+45, 0, 0, 1);
+    rightHand.matrix.rotate(45, 0, 0, 1);
+    rightHand.matrix.rotate(g_handAngle, 0, 0, 1);
     var rightHandCoordsMat = new Matrix4(rightHand.matrix);
     rightHand.render();
 
